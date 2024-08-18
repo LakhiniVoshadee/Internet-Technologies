@@ -4,6 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 4</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+      table{
+        width: 600px;
+        
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="6">Personal Information</th>
+          <!-- <th>1</th> -->
+           <!-- <th>2</th> -->
+            <!-- <th>3</th> -->
+             <!-- <th>4</th>
+             <th>5</th>
+             <th>6</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name :</td>
+          <td colspan="2">
+            <textarea name="message"></textarea>
+          </td>
+          <!-- <td>1</td> -->
+        </tr>
+        <tr>
+          <td>Age :</td>
+          <td colspan="2"> <textarea name="message"></textarea></td>
+          <!-- <td>1</td> -->
+        </tr>
+        <tr>
+          <td rowspan="3">Address :</td>
+          <td >Street :</td>
+          <td> <textarea name="message"></textarea></td>
+         
+          </td>
+        </tr>
+       
+          <tr>
+            <!-- <td>1</td> -->
+            <td>City:</td>
+            <td><textarea name="message"></textarea></td>
+           
+          </tr>
+
+          <tr>
+            <!-- <td>2</td> -->
+            <td>Zip Code:</td>
+            <td><textarea name="message"></textarea></td>
+          </tr>
+       
+       <thead>
+        <tr>
+          <th rowspan="3">Additional Information</th>
+        
+        </tr>
+       </thead>
+
+       <tr>
+        <td>1</td>
+       
+       </tr>
+       <tr>
+        <td>1</td>
+       </tr>
+
+       <tr>
+        <td>1</td>
+       </tr>
+       
+      </tbody>
+     
+    
+    </table>
+
+
+    <hr>
+    <br>
+    <br>
+    <br>
+    <table style="width: 400px; ">
+      <tr >
+        <td colspan="4">Personal Information</td>
+        <!-- <td>2</td>
+        <td>3</td>
+        <td>4</td> -->
+        
+      </tr>
+      <tr>
+        <td>Name :</td>
+        <td colspan="3"><input type=text></td>
+        <!-- <td>7</td>
+        <td>8</td> -->
+      </tr>
+      <tr>
+        <td>Age :</td>
+        <td colspan="3"><input type=number></td>
+        <!-- <td>11</td>
+        <td>12</td> -->
+      </tr>
+      <tr>
+        <td rowspan="3">Address :</td>
+        <td>Street :</td>
+        <td colspan="2"><input type=text></td>
+        <!-- <td>16</td> -->
+      </tr>
+      <tr>
+        <!-- <td>17</td> -->
+        <td>City :</td>
+        <td colspan="2"><input type=text></td>
+        <!-- <td>20</td> -->
+      </tr>
+      <tr>
+        <!-- <td>21</td> -->
+        <td>Zip Code :</td>
+        <td colspan="2"><input type=number></td> 
+        <!-- <td>24</td> -->
+      </tr>
+      <tr>
+        <td colspan="4">Additional Information</td>
+        <!-- <td>26</td>
+        <td>27</td>
+        <td>28</td></tr> -->
+      <tr>
+        <td colspan="4"><textarea name="message" cols="70"></textarea></td>
+        <!-- <td>30</td>
+        <td>3</td>
+        <td>4</td> -->
+      </tr>
+      <tr>
+        <td colspan="4"><button>Submit</button></td>
+        <!-- <td>2</td>
+        <td>3</td>
+        <td>4</td> -->
+      </tr>
+
+    </table>
+  </body>
 </html>

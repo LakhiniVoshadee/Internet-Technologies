@@ -24,12 +24,104 @@
     <strong>====2. Input====</strong>
 
     <br />
+    <p>-----Text Input-----</p>
 
     <label for="firstName">First Name :</label>
     <input type="text" placeholder="Enter your first name" maxlength="20" />
 
     <br />
+    <p>----Number Input-----</p>
     <label for="age">Age :</label>
     <input type="number" value="18" />
+
+    <br />
+    <p>----Password Input-----</p>
+    <label for="password">Password :</label>
+    <input type="password" value="18" />
+
+    <br />
+    <p>----Date Input-----</p>
+    <label for="date">Date :</label>
+    <input type="date" value="18" />
+
+    <br />
+    <p>----Radio Button-----</p>
+    <label for="male">Male :</label>
+    <input type="radio" name="gender" />
+    <label for="female">Female :</label>
+    <input type="radio" name="gender" />
+
+    <br />
+    <p>----Checkbox-----</p>
+    <label for="remember">Remember me::</label>
+    <input type="checkbox" />
+
+    <br />
+    <p>----File Upload-----</p>
+
+    <input type="file" name="file" />
+
+    <hr />
+    <br />
+    <!-- textarea -->
+    <strong>====3. TextArea====</strong>
+    <br />
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Enter your message"
+      rows="5"
+      cols="30"
+    ></textarea>
+
+    <hr />
+    <br />
+
+    <!-- buttons -->
+    <strong>====4. Buttons====</strong>
+    <br />
+    <button type="submit">Submit</button>
+    <br />
+    <button type="button" onclick="alert('Hello World')">Click me</button>
+    <!-- <br />
+    <button>Click Here</button> -->
+
+    <hr />
+    <br />
+
+    <strong>====5. Select/ Drop Down====</strong>
+    <br />
+    <select name="technology" id="tech">
+      <option value="java">Java</option>
+      <option value="javaScript">Java Script</option>
+      <option value="python">Python</option>
+    </select>
+
+    <hr />
+    <br />
+
+    <strong>====Fieldset and Legend====</strong>
+    <br />
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="name">Name :</label>
+      <input type="text" />
+      <label for="age">Age :</label>
+      <input type="number" />
+    </fieldset>
+
+    <hr />
+    <br />
+
+    <!-- form is used to create a form for user inputs -->
+
+    <strong>====Form====</strong>
+    <br />
+
+    <form action="/pages/lesson-from-elements.html" method="post">
+      <label for="name">Name :</label>
+      <input type="text" required />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
