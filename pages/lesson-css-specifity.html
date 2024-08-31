@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-CSS-Specificity</title>
+    <style>
+      /* Element Selector */
+      #main-content {
+        background-color: rgb(20, 24, 238);
+      }
+      p {
+        background-color: rgb(240, 13, 51);
+      }
+      .content {
+        background-color: rgb(0, 255, 170);
+      }
+
+      /* ClassSelecgtor */
+
+      .content {
+        background-color: rgb(32, 238, 42);
+      }
+      .card-content {
+        background-color: blue;
+      }
+
+      div p {
+        background-color: rgb(18, 110, 75);
+      }
+
+      div .content {
+        background-color: yellowgreen;
+      }
+
+      div #main-content {
+        background-color: tomato;
+      }
+
+      #card #main-content {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><b>CSS Specifity</b></h1>
+    <div class="card-container" id="card">
+      <p class="content" id="main-content" style="background-color: brown">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex laboriosam
+        ut doloremque magni distinctio qui, fuga quaerat. Corrupti quia
+        reiciendis ducimus necessitatibus temporibus? Iste id, voluptatum
+        repudiandae voluptates eveniet debitis saepe porro ducimus optio earum
+        distinctio, corporis velit qui? Accusantium ea expedita nesciunt quos in
+        blanditiis eos beatae quia. Esse.
+      </p>
+    </div>
+  </body>
+</html>

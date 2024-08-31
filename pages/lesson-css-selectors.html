@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-CSS-Selectors</title>
+    <style>
+      /* Element Selector
+      h3 {
+        color: red;
+      }
+
+      .text {
+        color: rgb(12, 179, 67);
+      }
+
+      class selector
+      .heading {
+        color: rgb(138, 14, 187);
+      }
+      
+      ID selector
+      #main-paragraph {
+        color: chocolate;
+      }
+
+      /* Attribute Selector */
+      /* a[target="_blank"] {
+        color: rgb(235, 83, 28);
+      } */
+      /* Decendant Selector */
+      /* div p {
+        font-style: italic;
+      }
+      /* Child Selector */
+      /* ul > li {
+        color: blue;
+        list-style-type: georgian;
+      }
+       */
+      /* Adjacent Sibling Selector */
+
+      /* h3 + p {
+        color: rgb(20, 224, 105);
+      } */
+
+      /* General Sibling Selector */
+      /* h1 ~ p {
+        color: rgb(196, 48, 72);
+      } */
+
+      /* Pseudo Class Selector  */
+
+      /* li:first-child {
+        color: blueviolet;
+      }
+
+      li:last-child {
+        color: yellowgreen;
+      }
+
+      li:nth-child(2) {
+        color: violet;
+      } */
+
+      /* li:nth-child(odd) {
+        color: brown;
+      }
+
+      li:nth-child(even) {
+        color: rgb(90, 187, 187);
+      } */
+
+      /* ul:hover {
+        background-color: rgb(128, 128, 150);
+      } */
+
+      /* <!-- Pseudo Elements --> */
+
+      /* p::first-letter {
+        color: red;
+        font-size: 40px;
+      }
+
+      p::first-line {
+        color: blue;
+      }
+
+      p::before {
+        content: "Before";
+        color: rgb(141, 141, 39);
+      }
+
+      p::after {
+        content: "After";
+        color: violet;
+      } */
+
+      /* <!-- grouping selectors --> */
+      h1,
+      h2,
+      h3 {
+        color: rgb(189, 47, 68);
+      }
+    </style>
+  </head>
+  <body>
+    <h1><b>CSS Selectors</b></h1>
+
+    <!-- Element Selector -->
+
+    <h2>====== 1. Element Selector=======</h2>
+    <h3>Hello World!</h3>
+    <h4>jhbxjhs</h4>
+    <h3>mjGab</h3>
+    <hr />
+
+    <!-- class selector -->
+
+    <h2>====== 2. Class Selector=======</h2>
+    <p>
+      Lorem ipsum
+      <span class="text">dolor sit amet consectetur adipisicing elit.</span>
+      Ullam sunt corrupti, dicta, mollitia recusandae animi neque libero
+      officiis ratione beatae suscipit nisi temporibus. Tenetur, alias vel
+      aspernatur
+      <span style="font-size: large">praesentium non reiciendis?</span> Atque
+      maiores illo eius! Molestias cum est, sed vitae quam deserunt? Omnis
+      blanditiis quis maxime enim, architecto atque impedit beatae?
+    </p>
+
+    <h3 class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nihil odio
+      ullam dignissimos quas explicabo quisquam excepturi ipsum possimus ut!
+    </h3>
+
+    <h1 class="heading">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h3 class="heading">Heading 3</h3>
+    <h4 class="heading">Heading 4</h4>
+    <h5 class="heading">Heading 5</h5>
+    <h6 class="heading">Heading 6</h6>
+    <hr />
+
+    <!-- ID Selector -->
+    <h2>====== 3. ID Selector=======</h2>
+    <p id="main-paragraph">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+      consequuntur sint iure neque accusantium numquam vitae eum nisi voluptate
+      vero, corporis quam minima explicabo autem cum optio minus sapiente!
+      Tempore laborum id fuga quam ut et! Vero, necessitatibus ipsa? Suscipit
+      velit provident nisi exercitationem minima animi. Cum dolorem ea minima.
+    </p>
+    <hr />
+    <!-- Attributr Selector -->
+    <h2>====== 4. Attribute Selector=======</h2>
+    <br />
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <hr />
+
+    <!-- Decendant Selector -->
+    <h2>====== 5. Decendant Selector=======</h2>
+    <p>hiiii</p>
+    <div>
+      <p>One</p>
+      <p>Two</p>
+      <p>Three</p>
+    </div>
+    <hr />
+    <!-- Child Selector -->
+    <h2>====== 6. Child Selector(>)=======</h2>
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+    <hr />
+
+    <!-- Adjacent Sibling Selector -->
+
+    <h2>====== 7. Adjacent Sibling Selector(+)=======</h2>
+
+    <h3>Adjacent</h3>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+
+    <hr />
+
+    <!-- General Sibling Selector -->
+
+    <h2>====== 8.General Sibling Selector(~)=======</h2>
+    <h1>main heading</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, facilis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+      tempore!
+    </p>
+    <div>
+      <p>Not Applied!</p>
+    </div>
+
+    <hr />
+
+    <!-- Pseudo Class Selector -->
+    <h2>====== 9.Pseudo Class Selector(~)=======</h2>
+    <ul>
+      <li>JAVA</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>MYSQL</li>
+    </ul>
+    <hr />
+
+    <!-- Pseudo Elements -->
+    <h2>====== 10.Pseudo Element Selector=======</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illum
+      molestias accusamus doloribus nemo corrupti dignissimos voluptatibus
+      consequuntur optio totam?
+    </p>
+    <hr />
+    <!-- grouping selectors -->
+    <h2>====== 11. Grouping Selector(,)=======</h2>
+    <h1>Heloooooooooooooooo!</h1>
+    <h2>Heloooooooooooooooo!</h2>
+    <h3>Heloooooooooooooooo!</h3>
+    <hr />
+  </body>
+</html>
