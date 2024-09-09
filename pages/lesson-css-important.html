@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-CSS-Important</title>
+    <style>
+      h1 {
+        color: red !important;
+      }
+
+      .title {
+        color: aqua;
+      }
+
+      #main_title {
+        color: blueviolet;
+      }
+
+      div h1 {
+        color: blue;
+      }
+
+      .container #main_title {
+        color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title" id="main_title" style="color: yellowgreen">
+        CSS Important
+      </h1>
+    </div>
+  </body>
+</html>
