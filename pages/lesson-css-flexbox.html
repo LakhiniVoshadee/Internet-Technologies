@@ -15,12 +15,13 @@
         border-radius: 15px;
         margin: 0px;
       }
+
       .container {
         display: flex;
         height: 85vh;
         border: 3px solid red;
         /* =============================================by-default==================================================== */
-        /* flex-direction: row; */
+        flex-direction: row;
         /* =========================================================================================================== */
         /* flex-direction: row-reverse; */
         /* flex-direction: column; */
@@ -62,15 +63,21 @@
         /* align-content: center; */
         /* align-content: space-around; */
         /* align-content: space-between; */
+
+        /* ======================================================================================================================================= */
+
+        /* column-gap: 10px; */
       }
       #box1 {
         background-color: tomato;
+        /* align-self: center; */
       }
       #box2 {
         background-color: yellowgreen;
       }
       #box3 {
         background-color: cornflowerblue;
+        /* align-self: center; */
       }
       #box4 {
         background-color: violet;
@@ -99,7 +106,7 @@
       <div class="box" id="box4">
         <p>4</p>
       </div>
-      <div class="box" id="box1">
+      <!-- <div class="box" id="box1">
         <p>5</p>
       </div>
       <div class="box" id="box2">
@@ -110,7 +117,7 @@
       </div>
       <div class="box" id="box4">
         <p>8</p>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
