@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - 8</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      header {
+        width: 100vw;
+        height: 10vh;
+        background-color: rgb(80, 78, 78);
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: flex;
+      }
+
+      .container {
+        font-family: sans-serif;
+      }
+      header h1 {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        align-content: center;
+        margin-left: 40px;
+      }
+
+      header nav ul {
+        list-style: none;
+        display: flex;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        justify-content: end;
+        color: white;
+      }
+
+      header nav a {
+        margin-left: 60px;
+        justify-content: start;
+      }
+
+      header nav {
+        align-content: center;
+        margin-left: auto;
+        margin-right: 30px;
+      }
+
+      .container {
+        display: flex;
+        line-height: 20px;
+      }
+
+      .container p {
+        color: white;
+      }
+
+      .container h1 {
+        text-align: center;
+        color: white;
+      }
+      .container .right-box {
+        width: 50%;
+        height: auto;
+        border: 1px solid;
+      }
+
+      .container .left-box {
+        width: 50%;
+        height: auto;
+        border: 1px solid;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .container .left-box button {
+        align-content: center;
+        background-color: aqua;
+        height: 5vh;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+
+      .container .left-box button:hover {
+        background-color: rgb(154, 228, 228);
+      }
+
+      .container .left-box .social-media {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding-top: 20px;
+      }
+
+      .container .left-box .social-media a {
+        justify-content: end;
+        color: white;
+        align-content: center;
+        margin-left: auto;
+        margin-right: 20px;
+        padding-top: 40px;
+        list-style: none;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/assets/images/IMG-20240309-WA0021.jpg"
+        alt="profile-pic"
+        style="
+          height: 10vh;
+          width: 8vw;
+          border-radius: 100%;
+          padding-top: 5px;
+          padding-left: 20px;
+        "
+      />
+
+      <h1>Lakhini Voshadee</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="left-box">
+        <h1>Hey There!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          dolorem a alias tempora provident porro! Non eius nam consectetur
+          maiores quidem numquam recusandae aperiam architecto quos illum
+          tenetur exercitationem, voluptate culpa animi maxime quaerat hic odio
+          minus alias cumque voluptatibus repellendus, assumenda eos.
+          Exercitationem nisi incidunt cupiditate natus voluptatem sequi.
+        </p>
+        <button>More Info</button>
+
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/profile.php?id=100090009402395"
+            target="_blank"
+            ><img
+              src="/assets/images/facebook.jpeg"
+              alt="facebook"
+              style="width: 50px; height: 50px; border-radius: 50%"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/lakhini-voshadee/"
+            target="_blank"
+            ><img
+              src="/assets/images/linkendin.jpeg"
+              alt="linkedin"
+              style="width: 50px; height: 50px; border-radius: 50%"
+          /></a>
+          <a href="https://github.com/LakhiniVoshadee" target="_blank"
+            ><img
+              src="/assets/images/github.jpeg "
+              alt="github"
+              style="width: 50px; height: 50px; border-radius: 50%"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img
+              src="/assets/images/youtube.jpeg"
+              alt="youtube"
+              style="width: 50px; height: 50px; border-radius: 50%"
+          /></a>
+        </div>
+      </div>
+      <div class="right-box">
+        <img
+          src="/assets/images/IMG-20240309-WA0021.jpg"
+          alt="right-photo"
+          style="width: 50vw; height: auto"
+        />
+      </div>
+    </div>
+  </body>
+</html>
