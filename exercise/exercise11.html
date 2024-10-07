@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-11</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: azure;
+        height: 100vh;
+      }
+
+      .box {
+        height: auto;
+        width: 8vw;
+        padding: 16px;
+        background-color: antiquewhite;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 30px;
+        box-shadow: 0 4px 16px gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        transition: width 1s ease;
+      }
+
+      .box:hover {
+        transition-duration: 4s;
+        width: 18vw;
+        font-size: 20px;
+      }
+
+      .text-box {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        opacity: 0;
+      }
+
+      .text-box:hover {
+        opacity: 1;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        😁
+        <div class="text-box">Laughing</div>
+      </div>
+      <div class="box box2">
+        😭
+        <div class="text-box">Crying</div>
+      </div>
+      <div class="box box3">
+        😍
+        <div class="text-box">Love</div>
+      </div>
+      <div class="box box4">
+        🤭
+        <div class="text-box">shy</div>
+      </div>
+    </div>
+  </body>
+</html>
